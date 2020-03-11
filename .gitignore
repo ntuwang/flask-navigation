@@ -1,0 +1,12 @@
+.idea/
+*.log
+*.db
+# Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+file
+__pycache__
