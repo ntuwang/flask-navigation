@@ -4,6 +4,7 @@ from importlib import import_module
 from logging import basicConfig, DEBUG, getLogger, StreamHandler
 from logging.config import dictConfig
 import datetime
+import os
 
 db = SQLAlchemy()
 
@@ -29,6 +30,10 @@ def configure_database(app):
 
 
 def configure_logs(app):
+    baseDir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    logDir = os.path.join(baseDir, "logs")
+    if not os.path.exists(logDir):
+        os.makedirs(logDir)  # 创建路径
 
     logDict = {
         "version": 1,
