@@ -7,7 +7,7 @@
 
 
 ### 1. 获取代码
-    git clone https://github.com/afourmy/flask-navigation.git
+    git clone https://github.com/ntuwang/flask-navigation.git
     cd flask-navigation
 
 ### 2. 安装 requirements 
